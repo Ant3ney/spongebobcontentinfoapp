@@ -1,5 +1,7 @@
 .App {
   text-align: center;
+  display: flex;
+  flex-direction: column;
 }
 
 .App-logo {
@@ -35,4 +37,46 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+.sponge-grid-container {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.sponge-container {
+  display: flex;
+  flex-direction: column;
+  width: 33.333%;
+  padding: 0px 15px;
+  box-sizing: border-box;
+}
+
+@media screen and (max-width: 900px) {
+  .sponge-container {
+    width: 50%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .sponge-container {
+    width: 100%;
+  }
+}
+
+.sponge-container button {
+  margin-top: 1rem;
+}
+
+.info-box {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0rem auto;
+  justify-content: center;
+}
+
+h2 {
+  text-align: center;
 }
